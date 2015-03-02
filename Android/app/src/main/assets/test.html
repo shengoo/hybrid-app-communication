@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<h2>web view</h2>
+<div>
+<label>Text:</label>
+<input id="t" type="text" />
+</div>
+<br />
+<input type="button" onclick="updateTxt();" value="Update native">
+  <script>
+      function updateTxt(){
+        if(typeof Android !== "undefined"){
+          Android.updateText(document.getElementById("t").value);
+        }
+      }
+      function setTxt(txt){
+        document.getElementById("t").value = txt;
+      }
+  </script>
+</body>
+</html>

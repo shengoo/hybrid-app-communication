@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A7F64A1AA4A24B009D1075 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 04A7F6491AA4A24B009D1075 /* test.html */; };
 		04BF5EB41AA42C4100636978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5EB31AA42C4100636978 /* AppDelegate.swift */; };
 		04BF5EB61AA42C4100636978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5EB51AA42C4100636978 /* ViewController.swift */; };
 		04BF5EB91AA42C4100636978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF5EB71AA42C4100636978 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A7F6491AA4A24B009D1075 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		04BF5EAE1AA42C4100636978 /* HybridApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF5EB21AA42C4100636978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BF5EB31AA42C4100636978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		04BF5EB11AA42C4100636978 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04A7F6491AA4A24B009D1075 /* test.html */,
 				04BF5EB21AA42C4100636978 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A7F64A1AA4A24B009D1075 /* test.html in Resources */,
 				04BF5EB91AA42C4100636978 /* Main.storyboard in Resources */,
 				04BF5EBE1AA42C4100636978 /* LaunchScreen.xib in Resources */,
 				04BF5EBB1AA42C4100636978 /* Images.xcassets in Resources */,
@@ -407,6 +411,7 @@
 				04BF5ECF1AA42C4100636978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04BF5ED01AA42C4100636978 /* Build configuration list for PBXNativeTarget "HybridAppTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				04BF5ED21AA42C4100636978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

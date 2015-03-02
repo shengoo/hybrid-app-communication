@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HybridApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fx2-YM-8Um">
+                                <rect key="frame" x="16" y="20" width="568" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmv-dw-xU7">
+                                <rect key="frame" x="16" y="300" width="568" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ju-sw-e7M">
+                                        <rect key="frame" x="8" y="8" width="552" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkL-57-sNx">
+                                        <rect key="frame" x="8" y="115" width="287" height="30"/>
+                                        <state key="normal" title="Update webview"/>
+                                        <connections>
+                                            <action selector="buttonClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="EwH-oH-JLD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-Ot-glV">
+                                        <rect key="frame" x="8" y="57" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="toT-R5-26U">
+                                        <rect key="frame" x="53" y="53" width="242" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8ju-sw-e7M" firstAttribute="top" secondItem="vmv-dw-xU7" secondAttribute="top" constant="8" id="Nrc-Ae-0cI"/>
+                                    <constraint firstItem="8ju-sw-e7M" firstAttribute="leading" secondItem="vmv-dw-xU7" secondAttribute="leading" constant="8" id="UBL-Kk-wKJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ju-sw-e7M" secondAttribute="trailing" constant="8" id="cwo-lg-4Rz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vmv-dw-xU7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="33b-Z9-In7"/>
+                            <constraint firstItem="vmv-dw-xU7" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="3kr-hg-C9r"/>
+                            <constraint firstItem="Fx2-YM-8Um" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Awh-6c-tTD"/>
+                            <constraint firstItem="vmv-dw-xU7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GSL-q9-ey0"/>
+                            <constraint firstItem="Fx2-YM-8Um" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VLc-Fl-n1S"/>
+                            <constraint firstItem="Fx2-YM-8Um" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dZh-3u-wT9"/>
+                            <constraint firstItem="Fx2-YM-8Um" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kNQ-wR-xR0"/>
+                            <constraint firstItem="vmv-dw-xU7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sQx-41-0pc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="toT-R5-26U" id="BKW-fo-TRv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="391"/>
+        </scene>
+    </scenes>
+</document>
